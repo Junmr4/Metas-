@@ -1,1 +1,1 @@
-web: gunicorn metas.wsgi --log-file -
+web: gunicorn metas.wsgi
