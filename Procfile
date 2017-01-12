@@ -1,1 +1,1 @@
-web: gunicorn metas.wsgi --log-file - --preload --workers 1
+web: gunicorn metas.wsgi.py --log-file - --preload --workers 1
