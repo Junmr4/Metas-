@@ -101,7 +101,8 @@ WSGI_APPLICATION = 'metas.wsgi.application'
 DATABASES = {
     # Raises ImproperlyConfigured exception if DATABASE_URL not in
     # os.environ
-    'default': env.db(),
+    #'default': env.db(),
+    'default': dj_database_url.config(default='sqlite:///db.sqlite'),
 }
 
 # Internationalization
